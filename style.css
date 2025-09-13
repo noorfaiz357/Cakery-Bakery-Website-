@@ -373,6 +373,9 @@ footer h4 {
   h1 {
     font-size: 2.8rem;
   }
+  h2{
+    text-align: center;
+  }
   /*.navlist,*/
   .nav-icons {
     display: none;
@@ -381,12 +384,13 @@ footer h4 {
     display: block;
   }
   .navbar{
-    position: sticky;
+    position: fixed;
     background-color: var(--white-clr);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 10vh;
     padding: 1rem;
+    z-index:999;
   }
   .navlist {
     position: absolute;
@@ -394,7 +398,7 @@ footer h4 {
     flex-direction: column;
     background-color: var(--dawn-pink);
     height: 100vh;
-    width: 60%;
+    width: 80%;
     left: 0;
     align-items: flex-start;
     padding: 6rem 0 0 3rem;
@@ -423,5 +427,18 @@ footer h4 {
   .icon-link{
     margin: .3rem;
   }
-
+  .form-container{
+    flex-direction: column;
+    border: none;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .form-container input[type = "email"]{
+    margin-top: 1rem;
+    border: 1px solid var(--gray-clr);
+    border-radius: 30px;
+    padding: 1rem;
+    width: 100%;
+  }
 }
