@@ -346,10 +346,12 @@
     <script>
       const navList = document.getElementById("navlist");
       const hamBurger = document.getElementById("hamburger");
-
       hamBurger.addEventListener("click", () => {
         navList.classList.toggle("navlist-active");
       });
+      window.addEventListener("scroll",()=>{
+        navList.classList.remove("navlist-active")
+      })
     </script>
   </body>
 </html>
